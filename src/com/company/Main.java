@@ -47,9 +47,9 @@ public class Main {
 
     public static void dollarsAndStars() {
         int n = 7;
-        for (int i = 12; i < 12; i--){
+        for (int i = 12; i >= 0; i=i-2){
             System.out.print("*");
-            for (int j=n; j<=n;){
+            for (int j=n; j>=0;j--){
                 System.out.print("$");
             }
             n--;
@@ -79,6 +79,7 @@ public class Main {
 
     sillyNumbers();
     sillyNumbers2();
+    dollarsAndStars();
     }
 }
 
