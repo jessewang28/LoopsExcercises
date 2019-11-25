@@ -18,7 +18,6 @@ public class Main {
     }
 /*
     public static int sumDigits(int n){
-
         while(n<=)
 
     }
@@ -36,7 +35,7 @@ public class Main {
     }
 
     public static void sillyNumbers2() {
-        for (int a=1; a<=3; a++) {
+        for (int a=1; a<=5; a++) {
             for (int i=9; i>=1; i--){
                 for (int j=i; j>0; j--){
                     System.out.print(i);
@@ -46,6 +45,24 @@ public class Main {
         }
     }
 
+    public static void dollarsAndStars() {
+        int n = 7;
+        for (int i = 12; i < 12; i--){
+            System.out.print("*");
+            for (int j=n; j<=n;){
+                System.out.print("$");
+            }
+            n--;
+            System.out.println();
+        }
+    }
+//$$$$$$$**************$$$$$$$
+//**$$$$$$************$$$$$$**
+//****$$$$$**********$$$$$****
+//******$$$$********$$$$******
+//********$$$******$$$********
+//**********$$****$$**********
+//************$**$************
 
     public static void main(String[] args) {
 	int a = addOdds(6);         //addOdds Test
