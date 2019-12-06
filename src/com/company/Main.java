@@ -16,12 +16,15 @@ public class Main {
         }
         return i;
     }
-/*
-    public static int sumDigits(int n){
-        while(n<=)
 
+    public static int sumDigits(int n) {
+        int total = 0;
+        while (n>0){
+            total = total + n%10;
+            n/=10;
+        }
+        return total;
     }
-*/
 
     public static void sillyNumbers() {
         for (int a=1; a<=3; a++) {
@@ -73,13 +76,7 @@ public class Main {
 //********$$$******$$$********
 //**********$$****$$**********
 //************$**$************
-//$$$$$$$**************$$$$$$$
-//**$$$$$$************$$$$$$**
-//****$$$$$**********$$$$$****
-//******$$$$********$$$$******
-//********$$$******$$$********
-//**********$$****$$**********
-//************$**$************
+
 
     public static void main(String[] args) {
 	int a = addOdds(6);         //addOdds Test
@@ -92,7 +89,14 @@ public class Main {
     int d = howManyYears(111.2, 120);           //howManyYears Test
     System.out.println(d);
     int e = howManyYears(111.2, 150);
-    System.out.println(e);
+        System.out.println(e);
+
+    int f = sumDigits(15);          //sumDigits
+        System.out.println(f);
+    int g = sumDigits(652);
+        System.out.println(g);
+    int h = sumDigits(1038);
+        System.out.println(h);
 
     sillyNumbers();
     sillyNumbers2();
@@ -104,7 +108,30 @@ public class Main {
 9           //addOdds
 16
 64
+
+
 7           //howManyYears
 27
+
+6       //sumDigits
+13
+12
+
+000111222333444555666777888999      //sillyNumbers
+000111222333444555666777888999
+000111222333444555666777888999
+999999999888888887777777666666555554444333221       //sillyNumbers2
+999999999888888887777777666666555554444333221
+999999999888888887777777666666555554444333221
+999999999888888887777777666666555554444333221
+999999999888888887777777666666555554444333221
+
+//$$$$$$$**************$$$$$$$      //dollarsAndStars
+//**$$$$$$************$$$$$$**
+//****$$$$$**********$$$$$****
+//******$$$$********$$$$******
+//********$$$******$$$********
+//**********$$****$$**********
+//************$**$************
 
  */
