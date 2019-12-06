@@ -47,12 +47,22 @@ public class Main {
 
     public static void dollarsAndStars() {
         int n = 7;
+        int m = 0;
         for (int i = 12; i >= 0; i=i-2){
-            System.out.print("*");
-            for (int j=n; j>=0;j--){
+            for (int k = 2*m; k >0 ; k--)
+            {System.out.print("*");}
+            for (int j=n; j>0;j--){
                 System.out.print("$");
             }
+            for (int l = i; l>=0 ; l--)
+            {System.out.print("*");}
+            for (int j=n; j>0;j--){
+                System.out.print("$");
+            }
+            for (int k = 2*m; k >0 ; k--)
+            {System.out.print("*");}
             n--;
+            m++;
             System.out.println();
         }
     }
@@ -63,6 +73,13 @@ public class Main {
 //********$$$******$$$********
 //**********$$****$$**********
 //************$**$************
+//$$$$$$$*************$$$$$$$
+//**$$$$$$***********$$$$$$**
+//****$$$$$*********$$$$$****
+//******$$$$*******$$$$******
+//********$$$*****$$$********
+//**********$$***$$**********
+//************$*$************
 
     public static void main(String[] args) {
 	int a = addOdds(6);         //addOdds Test
