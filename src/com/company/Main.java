@@ -1,5 +1,8 @@
 package com.company;
 
+//Jesse Wang
+//3B Computer Science
+
 public class Main {
     public static int addOdds(int n){
         int sum = 0;
